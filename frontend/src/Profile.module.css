@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.profile {
+  color: #EEEEEE;
+  background-color: black;;
+}
+
+.navbar {
+    background-color: #393E46;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5);
+    margin-bottom: 10%;
+  }
+  
+  .homeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarBrand {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+  }
+  
+  .navbarMenu {
+    display: flex;
+  }
+  
+  .navLink,
+  .navLinkActive {
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 0 15px;
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  .navLink:not(.navLinkActive):hover {
+    color: #FFFFFF;
+  }
+  
+  .navLinkActive {
+    color: white;
+  }
+
+.header {
+  background-color: #393E46;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.content {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.column {
+  flex: 1;
+  margin: 0 10px;
+  background-color: #000000;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 5px rgba(130, 129, 129, 0.2);
+
+}
+
+.form {
+  margin-top: 20px;
+}
+
+.userBox {
+  position: relative;
+  margin-bottom: 30px;
+  
+}
+
+.userBox input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #fff;
+  outline: none;
+  background: transparent;
+}
+
+.userBox label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  pointer-events: none;
+  transition: .5s;
+}
+
+.userBox input:focus ~ label,
+.userBox input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #bdb8b8;
+  font-size: 12px;
+}
+
+.center button {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+
+.center button:hover {
+  background: #ea8b19;
+  /* color: transparent; */
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ea8b19,
+              0 0 25px #ea8b19,
+              0 0 50px #ea8b19,
+              0 0 100px #ea8b19;
+}
+
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4CAF50; /* Green background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+  z-index: 2000; /* Ensure it's above other content */
+  animation: slideDown 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes slideDown {
+  from {
+    top: -50px;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    display: 'none';
+  }
+}

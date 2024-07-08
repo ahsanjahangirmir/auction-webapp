@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body, html {
+    background-color: black;
+    font-family: 'Poppins', sans-serif;
+  }
+
+  .noAuctionsMessage {
+    text-align: center;
+    margin-top: 15%;
+    color: #FFFFFF;
+  }
+  
+  .auctionItem {
+    border: 1px solid #393E46;
+    border-radius: 25px;
+    padding: 10px;
+    margin: 5px;
+    color: #ffffff;
+  }
+  
+  .navbarHome {
+    background-color: #393E46;
+    height: 70px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .5); /* subtle shadow for depth */
+  }
+  
+  .homeContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbarBrand {
+    color: #EEEEEE;
+    text-decoration: none;
+    font-weight: 600; /* Poppins semi-bold */
+    font-size: 1.25rem; /* size adjustment for visibility */
+  }
+  
+  .navbarMenu {
+    display: flex;
+  }
+  
+  .navLink {
+    color: #EEEEEE;
+    text-decoration: none;
+    padding: 0 15px; /* spacing between links */
+    font-weight: 400; /* Poppins regular */
+    transition: color 0.3s ease; /* smooth transition for hover effect */
+  }
+  
+  .navLink:not(.active):hover {
+    color: #FFFFFF; /* a brighter color on hover for non-active links */
+  }
+
+
+.searchContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  margin-top: 20px; /* Adjust based on layout */
+}
+
+.searchInput {
+    background-color: black;
+    box-shadow: 0 0 10px #ea8b19;
+    color: white;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-right: none; /* hide right border where the button meets input */
+    font-size: 1rem;
+    border-top-left-radius: 5px; /* rounded corners for the left side of the input */
+    border-bottom-left-radius: 5px;
+    margin-right: -3px; /* Align input with button */
+}
+
+.searchButton {
+    
+  padding: 10px 20px;
+  background-color: #ea8b19;
+  box-shadow: 0 0 10px #ea8b19;
+
+  border-top-right-radius: 5px; /* rounded corners for the right side of the button */
+  border-bottom-right-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* smooth transition for hover effect */
+}
+
+.searchButton:hover {
+    background: #000;
+    color: #ea8b19;
+    box-shadow: 0 0 50px #ea8b19;
+}
+
+.auctionsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
